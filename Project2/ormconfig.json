@@ -1,0 +1,19 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 34167,
+    "username": "lucas",
+    "password": "9103",
+    "database": "typeORM",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+       "src/model/*.ts"
+    ],
+    "migrations": [
+       "src/migration/*.ts"
+    ],
+    "subscribers": [
+       "src/subscriber/*.ts"
+    ]
+ }
