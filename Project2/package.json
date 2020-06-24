@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev src/server.ts"
+    "dev": "ts-node-dev src/server.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,8 @@
     "typescript": "^3.9.5"
   },
   "devDependencies": {
+    "@types/morgan": "^1.9.1",
+    "morgan": "^1.10.0",
     "ts-node-dev": "^1.0.0-pre.49"
   }
 }
