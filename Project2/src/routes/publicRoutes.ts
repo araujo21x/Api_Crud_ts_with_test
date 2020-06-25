@@ -10,6 +10,6 @@ export default (app:Router) => {
     
     app.route('/user/:id')
         .get(userController.index)
-        .put(userController.edit)
+        .patch(userController.edit)
         .delete(userController.delete);
 }
