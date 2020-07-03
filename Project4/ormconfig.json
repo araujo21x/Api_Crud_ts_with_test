@@ -3,7 +3,7 @@
    "host": "localhost",
    "port": 3306,
    "username": "root",
-   "password": "",
+   "password": "9103",
    "database": "teste",
    "entities": [
       "src/models/*.ts"
