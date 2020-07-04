@@ -14,25 +14,25 @@ export class CreatConsoleUser1593658213033 implements MigrationInterface {
 					generationStrategy: 'increment',
 				},
 				{
-					name: 'idUser',
+					name: 'userId',
 					type: 'int',
                 },
 				{
-					name: 'idConsole',
+					name: 'consoleId',
                     type: 'int',
 				},
 			],
         }));
 
         await queryRunner.createForeignKey("usersCosole", new TableForeignKey({
-            columnNames:["idUser"],
+            columnNames:["userId"],
             referencedColumnNames: ['id'],
             referencedTableName:"users",
             onDelete:"CASCADE"
         }));
 
         await queryRunner.createForeignKey("usersCosole", new TableForeignKey({
-            columnNames:["idConsole"],
+            columnNames:["consoleId"],
             referencedColumnNames: ['id'],
             referencedTableName:"consoles",
             onDelete:"CASCADE"

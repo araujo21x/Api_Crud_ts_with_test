@@ -16,8 +16,8 @@ export class Console {
     @Column()
     launch: string;
 
-    @OneToMany(type => UserConsole, userConsole => userConsole.idConsole)
-    userConsole: UserConsole[];
+    @OneToMany(type => UserConsole, userConsole => userConsole.console)
+    userConsole!: UserConsole[];
 }
 
 export default Console;

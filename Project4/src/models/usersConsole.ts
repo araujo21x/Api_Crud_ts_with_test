@@ -9,8 +9,8 @@ export default class UserConsole {
     id: number;
 
     @ManyToOne(type => User, user => user.userConsole)
-    idUser: User;
+    user: User;
 
     @ManyToOne(type => Console, console => console.userConsole)
-    idConsole: Console;
+    console: Console;
 }

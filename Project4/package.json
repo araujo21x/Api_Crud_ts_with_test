@@ -4,20 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx nodemon --exec ts-node src/index.ts",
-    "typeorm": "npx ts-node ./node_modules/typeorm/cli.js "
+    "typeorm": "npx ts-node ./node_modules/typeorm/cli.js ",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/jest": "^26.0.3",
     "@types/node": "^14.0.14",
-    "body-parse": "^0.1.0",
+    "@types/supertest": "^2.0.10",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "jest": "^26.1.0",
     "mysql": "^2.18.1",
     "reflect-metadata": "^0.1.13",
+    "supertest": "^4.0.2",
+    "ts-jest": "^26.1.1",
     "typeorm": "^0.2.25"
   },
   "devDependencies": {

@@ -8,7 +8,7 @@ import UserConsole from './usersConsole';
     id: number;
 
     @Column()
-    name: string;
+    email: string;
 
     @Column()
     password: string;
@@ -16,7 +16,7 @@ import UserConsole from './usersConsole';
     @Column()
     birth: string;
 
-    @OneToMany(type => UserConsole, userConsole => userConsole.idUser)
+    @OneToMany(type => UserConsole, userConsole => userConsole.user)
     userConsole: UserConsole[];
 
 }

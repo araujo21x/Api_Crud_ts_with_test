@@ -8,7 +8,6 @@ import routes from '../routes/routes';
 const app = express();
 
 app.use(bodyParse.json());
-app.use(bodyParse({extended:false}));
 
 app.use(routes);
 
