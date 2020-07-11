@@ -5,8 +5,22 @@ import consoleUserConsole from '../controllers/userConsoleController';
 
 const routes = Router();
 
-routes.post('/users', userControlle.create);
+routes.get('/users/console', consoleUserConsole.indexMyConsoles);
+routes.post('/users', userControlle.store);
+routes.get('/users', userControlle.index);
+routes.get('/users/:id', userControlle.show);
+routes.delete('/users/:id', userControlle.destroy);
+routes.put('/users/:id', userControlle.edit);
+
 routes.post('/console', consoleController.store);
-routes.post('/userConsole', consoleUserConsole.store);
+routes.get('/console', userControlle.index);
+routes.get('/console/:id', userControlle.show);
+routes.delete('/console/:id', userControlle.destroy);
+routes.put('/console/:id', userControlle.edit);
+
+routes.post('/users/console', consoleUserConsole.store);
+
+routes.delete('/users/console/:id', consoleUserConsole.deleteMyConsole);
+routes.put('/users/console/:id', consoleUserConsole.showMyConsole);
 
 export default routes;
